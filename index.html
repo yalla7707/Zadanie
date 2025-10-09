@@ -5,11 +5,11 @@
     <title>Igor Reszka kl.4D</title>
     <style>
         body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #a2c3a2;
-            margin: 0;
-            padding: 0;
-            color: #333;
+	font-family: 'Segoe UI', sans-serif;
+  	background-color:#000000
+	margin: 0;
+	padding: 0;
+	color: #333;
         }
 
         header {
@@ -29,7 +29,7 @@
             max-width: 800px;
             margin: 40px auto;
             padding: 20px;
-            background-color: #f6fef6;
+            background-color: #1A1A1A;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
@@ -37,16 +37,31 @@
         h2 {
             color: #00796b;
             font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .zadanie {
+            background-color: #A6A6A6;
+            border: 2px solid #214f21;
+            border-radius: 8px;
+            padding: 15px 20px;
             margin-bottom: 20px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        ol {
-            padding-left: 20px;
+        .zadanie:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
 
-        li {
-            margin-bottom: 15px;
+        .zadanie a {
+            text-decoration: none;
+            color: #214f21;
             font-size: 1.2em;
+            font-weight: bold;
+            display: block;
         }
     </style>
 </head>
@@ -58,12 +73,22 @@
     <div class="panel">
         <section class="tasks">
             <h2>Zadania:</h2>
-            <ol>
-                <li><a href="https://yalla7707.github.io/zadanie1/" target="_blank">Zadanie 1</a></li>
-                <li><a href="https://yalla7707.github.io/Tabele1/" target="_blank">Zadanie - tabele</a></li>
-                <li><a href="https://yalla7707.github.io/Kotwice/" target="_blank">Zadanie14 - kotwice</a></li>
-                <li><a href="https://yalla7707.github.io/Motoryzacja/" target="_blank">Zadanie15</a></li>
-            </ol>
+
+            <div class="zadanie">
+                <a href="https://yalla7707.github.io/zadanie1/" target="_blank">Zadanie 1</a>
+            </div>
+
+            <div class="zadanie">
+                <a href="https://yalla7707.github.io/Tabele1/" target="_blank">Zadanie - tabele</a>
+            </div>
+
+            <div class="zadanie">
+                <a href="https://yalla7707.github.io/Kotwice/" target="_blank">Zadanie14 - kotwice</a>
+            </div>
+
+            <div class="zadanie">
+                <a href="https://yalla7707.github.io/Motoryzacja/" target="_blank">Zadanie15</a>
+            </div>
         </section>
     </div>
 </body>
